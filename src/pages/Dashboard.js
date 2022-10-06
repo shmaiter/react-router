@@ -1,7 +1,8 @@
-import React from "react";
-
-const Dashboard = () => {
-  return <div>Dashboard</div>;
+const Dashboard = ({ user }) => {
+  return (
+    <section className="section">
+      <h4>Hello, {user?.name}</h4>
+    </section>
+  );
 };
-
 export default Dashboard;
